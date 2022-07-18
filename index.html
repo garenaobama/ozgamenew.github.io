@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8">
+        <title>Oz game : Khám phá cả thế giới game trên trình duyệt của bạn</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script src="enginesheet.js"></script>
+    </head>
+    <body onload="responsive_1(),spotlight_animation_1(),spotlight_animation_2()">
+        <!--logo , mainpage button and links-->
+        <div id="header">
+            <a href="index.html"><img id="top-logo" src="images/small-logo.png"></a>
+            <div id="function-bar">
+                <div class="top-block">
+                    <a class="top-bar" href="#gameoffline">GAME OFFLINE</a>
+                </div>
+                <div class="top-block">
+                    <a class="top-bar" href="#gameonline">GAME ONLINE</a>
+                </div>
+                <div class="top-block">
+                    <a class="top-bar" href="#mobilegame">MOBILE GAME</a>
+                </div>
+                <div class="top-block">
+                    <a class="top-bar" href="#consolegame">CONSOLE GAME</a>
+                </div>
+                <div class="top-block">
+                    <a class="top-bar" href="#pcgame">PC GAME</a>
+                </div>
+            </div>
+            <div id="searcher-box"> 
+                <label id=fdsvicxd-searcher-box for="input-box">
+                    <img id="search-img" src="images/search.png">
+                    <input type="text" id="input-box" name="input-box" placeholder="Tìm kiếm trên Oz Games" autocomplete="off">
+                </label>
+            </div>
+        </div>
+        <div id="separator"></div> 
+        <content-here>
+            <div id="background">
+                <img class="background-img" src="https://i.pinimg.com/originals/5b/b8/b1/5bb8b1893e60f7ea98bda7afadfa8b82.jpg">
+                <img class="background-img" src="https://i.pinimg.com/originals/3e/a4/ec/3ea4ec098a5440db108b8d09f5890ac0.jpg">
+            </div>
+            <div id ="top-section">
+                <div id="spotlight">
+                    <div id="hot-trending">
+                        <div id="hot-trend-title">
+                            <h1 >GAME HOT - TOP TRENDING</h1>
+                        </div>
+                        <div id="main-spotlight">
+                            <img id="main-spotlight-img" src="https://www.leagueoflegends.com/static/open-graph-2e582ae9fae8b0b396ca46ff21fd47a8.jpg">
+                            <div class="links-expand">
+                                <h2 id="title-of-main-spotlight">League of Legends</h2>
+                                <a class="links-expand-box" id="inner-expand-info" href="#thongtin">
+                                    <img class="links-expand-img" src="images/doc-icon.png">
+                                    <h3 class="inner-links-descrpt">thông tin</h3>
+                                </a>
+                                <a class="links-expand-box" id="inner-expand-gameplay" href="#videogameplay">
+                                    <img class="links-expand-img" src="images/gameplay-icon.png">
+                                    <h3 class="inner-links-descrpt">video gameplay</h3>
+                                </a>    
+                                <a class="links-expand-box" id="inner-expand-download" href="#download">
+                                    <img class="links-expand-img" src="images/download-icon.png">
+                                    <h3 class="inner-links-descrpt">download</h3>
+                                </a>
+                            </div>
+                        </div> 
+                        <div id="hot-trend-list-cover">
+                            <div id="hot-trend-list">
+                                <button class="button-spotlight" id="htl0" onclick="onclick_htl0()">1</button>
+                                <button class="button-spotlight" id="htl1" onclick="onclick_htl1()">2</button>
+                                <button class="button-spotlight" id="htl2" onclick="onclick_htl2()">3</button>
+                                <button class="button-spotlight" id="htl3" onclick="onclick_htl3()">4</button>
+                                <button class="button-spotlight" id="htl4" onclick="onclick_htl4()">5</button>
+                            </div>
+                        </div>     
+                    </div>
+                    <div id="new-game">
+                        <div id="new-game-title">
+                            <h1 >NEW GAMES</h1>
+                        </div>
+                        <div id="right-side-spotlight">
+                            <img id="right-side-spotlight-img" src="https://s3.gaming-cdn.com/images/products/7154/orig/it-takes-two-pc-game-steam-cover.jpg">
+                            <div id="side-links-expand">
+                                <h2 id="title-of-side-spotlight">It takes two</h2>
+                                <a class="side-links-expand-box" id="inner-right-side-expand-info" href="#info">
+                                    <img class="side-links-expand-box-img" src="images/doc-icon.png">
+                                    <h3 class="side-inner-links-descrpt">thông tin</h3>
+                                </a>
+                                <a class="side-links-expand-box" id="inner-right-side-expand-videogameplay" href="#videogameplay">
+                                    <img class="side-links-expand-box-img" src="images/gameplay-icon.png">
+                                    <h3 class="side-inner-links-descrpt">video gameplay</h3>
+                                </a>
+                                <a class="side-links-expand-box" id="inner-right-side-expand-dowload" href="#dowload">
+                                    <img class="side-links-expand-box-img" src="images/download-icon.png">
+                                    <h3 class="side-inner-links-descrpt">download</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="new-game-list-cover">
+                            <div id="new-game-list">
+                                <button class="button-spotlight" id="ng0" onclick="onclick_ng0()">1</button>
+                                <button class="button-spotlight" id="ng1" onclick="onclick_ng1()">2</button>
+                                <button class="button-spotlight" id="ng2" onclick="onclick_ng2()">3</button>
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+                <div id="user-area-cover">
+                    <div id="user-area">
+                        <div id="user-info">
+                            <div id="avatar">
+                                <img id="avatar-image" src="images/logo-non-text-center-align.png">
+                            </div>
+                            <div id="lv">
+                                lv : <div id="inner-lv">999</div>
+                            </div>
+                            <div id="user-nickname">
+                                <div id="user-inner-nickname">[admin]phuongzoro</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </content-here>
+    </body>
+    <footer>
+
+    </footer>
+</html>
+<!-- script link below -->
